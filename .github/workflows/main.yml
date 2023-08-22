@@ -17,10 +17,10 @@ jobs:
         with:
           distribution: "zulu"
           java-version: "11"
-        #  Compilando Proyecto Maven a mano
-      - name: Compile Maven
+        #  Compilando Proyecto Graddle a mano
+      - name: Compile Graddle
         run: |
-          chmod +x mvnw
-          ./mvnw clean compile
+          chmod +x gradlew
+          ./gradlew build
    
 
