@@ -11,9 +11,15 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v3.5.3
+        # Seteo versión de Java (jdk necesario)
+      - name: Setup Java JDK
+        uses: actions/setup-java@v3.12.0
+        with:
+          java-version: "11"
+        #  Compilando Proyecto Maven a mano
+      - name: Compile Maven
+        run: |
+          chmod +x nvmw
+          ./nvmww clean compile
+   
 
-      - name: Descarga Codigo
-        run: ls -ltr
-
-      - name: Hola Mundo
-        run: echo "Hola Mundo desde devops-pipeline"
