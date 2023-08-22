@@ -20,7 +20,7 @@ jobs:
         #  Compilando Proyecto Maven a mano
       - name: Compile Maven
         run: |
-          chmod +x nvmw
-          ./nvmw clean compile
+          chmod +x mvnw
+          ./mvnw clean compile
    
 
